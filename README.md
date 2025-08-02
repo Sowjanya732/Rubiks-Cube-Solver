@@ -30,15 +30,15 @@
 
 rubiks-cube-solver/
   
-├── index.html                                                                # Main entry point
+├── index.html                                                               # Main entry point
 
-├── assets/                                                                   # Images and icons
+├── assets/                                                                  # Images and icons
 
-├── cube/                                                                     # Core solving logic and input handling
+├── cube/                                                                    # Core solving logic and input handling
 
 │   └── js/
 
-├── lib/                                                                      # Third-party libraries
+├── lib/                                                                     # Third-party libraries
 
 │   └── cubejs/
 
