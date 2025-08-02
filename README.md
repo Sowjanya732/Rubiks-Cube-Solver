@@ -30,21 +30,22 @@
 
   rubiks-cube-solver/
   
-  ├── index.html                 # Main entry point
+  ├── index.html                             # Main entry point
   
-  ├── assets/                   # Images and icons
+  ├── assets/                                # Images and icons
   
-  ├── cube/                     # Core solving logic and input handling
+  ├── cube/                                  # Core solving logic and input handling
   
   │   └── js/
   
-  ├── lib/                      # Third-party libraries
+  ├── lib/                                   # Third-party libraries
   
   │   └── cubejs/
   
   │   └── cuber/
 
 🧪 How to Use
+
   1. Clone or Download this repository:
     git clone https://github.com/Sowjanya732/rubiks-cube-solver.git
 
