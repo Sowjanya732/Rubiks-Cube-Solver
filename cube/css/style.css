@@ -1,0 +1,162 @@
+/* --------Base Fonts -------- */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #ffffff;
+}
+
+/* -------- 3D Cube Canvas Container -------- */
+#container {
+  width: 80%;
+  height: 85%;
+  position: absolute;
+  top: -10%;
+  left: 0%;
+  z-index: 1;
+  transform: scale(1.2); /* Optional: increase cube scale visually */
+  transform-origin: center;
+}
+
+
+/* -------- Terminal Display -------- */
+.type {
+  position: absolute;
+  bottom: 80px;
+  left: 41%;
+  transform: translateX(-50%);
+  width: 38%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #00ffc3;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffff;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px #0ff6;
+  overflow-y: auto;
+
+}
+
+#terminal::before {
+  content: "> ";
+  color: #ffffff;
+}
+
+/* -------- Solve Buttons Panel -------- */
+.solve {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #0ff;
+  box-shadow: 0 0 15px #0ff6;
+  backdrop-filter: blur(12px);
+  z-index: 2;
+}
+
+.solve button {
+  width: 180px;
+}
+
+/* -------- Twist Panel -------- */
+.twist {
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  width: 220px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #0ff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 15px #0ff6;
+  backdrop-filter: blur(12px);
+  z-index: 2;
+}
+
+.twist h1 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 22px;
+  color: #0ff;
+
+}
+
+.twist-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* -------- Button Base -------- */
+button {
+  height: 42px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid #00ffc3;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+
+}
+
+button:hover {
+  background: #00ffc3;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #00ffc3;
+}
+
+
+/* -------- Info Panel (Right Side) -------- */
+#infoPanel {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 450px;
+  max-height: 80%;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #00ffc3;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  white-space: normal;
+  color: #ffffff;
+  box-shadow: 0 0 15px #0ff6;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+
+#infoPanel h3 {
+  margin-bottom: 10px;
+  color: #0ff;
+  font-size: 16px;
+  text-align: center;
+}
+
+#infoPanel div {
+  margin-bottom: 10px;
+  word-break: break-word;
+}
